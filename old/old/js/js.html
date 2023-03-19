@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>js練習網站</title>
+        <link rel="stylesheet" herf="'style.css">
+    </head>
+    <body>
+        <p>標題</p>
+        <input type="text" id="title"/>
+        <p>內容</p>
+        <textarea id="content" row="8"></textarea>
+        <button id="bb">發布</button>
+        <div id="list">
+            <!-- <div class="article">
+                <h2>今天天氣真好</h2>
+                <p>good day</p> -->
+            </div>
+        </div>
+        <h1 id="header">小白</h1><!--記得定義id為header-->
+        <a id="link" href="https://translate.google.com.tw/?hl=zh-TW&tab=TT">https://translate.google.com.tw/?hl=zh-TW&tab=TT</a>
+        <img id="img" src="南山部長.png" width="300"/>
+        <button id="btn" onclick="handle_click()">按我</button>
+        <button id="btn" onclick="handle_click(this)">按我</button>
+        <script>
+            document.write("<h1>早安</h1>"); 
+            // <!--直接寫入-->
+        </script>
+        <script src="js.js"></script><!--可以外部引入-->
+        <br/>
+    </body>
+</html> 

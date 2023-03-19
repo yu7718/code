@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8"/> 
+        <title>你好</title>
+        <!--直接在head裡投放一個style可直接對body內部所有修正-->
+        <style>
+            p{
+                color: rgb(255, 166, 0);
+                background-color: gray ;
+            }
+            h1{
+                color: purple;
+            }
+        </style>
+        <!--也可以用link連接副檔為css的檔案(注意檔案資料夾位置)當多個網頁架構類似可用-->
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div style="'color:red;front: size 20px;">
+<!---->
+
+        <!--顏色-->
+       <i><b><h1>早安</h1></b></i>  
+       <h1>教學</h1>
+       <!--class類別 可以定義多個(用空白隔開)要有link別的檔案 用.(點)座連接-->
+       <p class="food background-grey">麻豆</p>
+       <!--id識別名稱 不能用重複的 用#座連接-->
+       <h1 id="css-h1" >好玩</h1>
+       <p id="css-2">不能重複</p>
+       <i><b><h1 style="color: red;">早安</h1></b></i>  <!--加上style可改文字顏色-->
+                                      <!--顏色三方法 色名(red)；色號；數字編碼(#000)-->
+       <i><b><h1 style="background-color: green;">早安</h1></b></i>  <!--背景顏色)-->
+       <i><b><h1 style="border: 10px solid rgb(71, 61, 61);">早安</h1></b></i> 
+                                      <!--邊框顏色3個要素大小；線狀態(實線)；顏色-->
+                                      <!--也可以加上width heght-->
+
+        <!--padding內部空間margin外部空間(只有他可以負數)，都可以填top，right，bottom，left(順時針)-->
+        <i><b><h1 style="padding: 20px 30px 40px 50px;margin: top -500px;background-color: aqua  ;">早安</h1></b></i>  
+        
+        <!-- float漂浮有left&right 3d效果 -->
+        <img src="雨傘學院.png" width="200px" style="float: left;"/>                  
+        <p>moring</p> 
+        <ul >
+            <li>主頁</li>
+            <li>第二頁</li>
+        </ul>
+        <br/>
+        <br/>
+        <br/>
+        <ul style="padding-left: 20px;float: left;background-color: aquamarine;">
+            <li>主頁</li>
+            <li>第二頁</li>
+        </ul>
+        <p>moring</p> 
+        <br/>
+        <br/>
+
+        <!-- display顯示 -->
+        <p>yooo</p>  <!--p和div本來是block(一次一整行)-->
+        <p>hello</p>
+        <p style="display: inline;">yooo</p>
+        <p style="display: inline;">hello</p>
+        <br/>
+        <a>yo</a>  <!--a和span本來是inline(有多少佔多少)-->
+        <a>hey</a>
+        <a style="display: block;">yo</a>
+        <a style="display: block;">hey</a>
+        <br/>
+        <br/>
+
+        <!-- position定位:fixed、relative、absolute*有問題不太了解fix和absolute不成功 -->
+            <div style="position: fixed; width: 80px;height: 80px;background-color: rgb(151, 104, 45) ;"></div>
+            <div style="position:absolute; width: 80px;height: 80px;background-color: rgb(151, 45, 45) ;"></div>
+            <div style="position:relative; width: 80px;height: 80px;background-color: rgb(98, 45, 151) ;"></div>
+            <div style="width: 80px;height: 80px;background-color: rgb(45, 117, 151) ;"></div>
+
+            <!--opacity透明度-->
+            <div style="opacity: 0.6;width: 70px;height: 50px;background-color: blueviolet;padding: 20px;color: rgb(255, 255, 255);">薰衣草</div>
+            <!--border-radius導角-->
+            <div style="border-radius: 40px 50px 40px 80px;width: 80px;height: 90px;background-color: rgb(93, 165, 42);"></div>
+        
+        </div>
+
+        <!--animation動畫-->
+        <div class="box box-animation"></div>
+    </body>
